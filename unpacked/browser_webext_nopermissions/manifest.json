@@ -3,6 +3,9 @@
   "name": "no permissions",
   "description": "test an extension with no permissions",
   "version": "1.0",
-
-  "applications": { "gecko": { "id": "nopermissions@test.mozilla.org" } }
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "nopermissions@test.mozilla.org"
+    }
+  }
 }

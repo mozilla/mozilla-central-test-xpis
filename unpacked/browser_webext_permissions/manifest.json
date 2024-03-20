@@ -3,16 +3,21 @@
   "name": "permissions test",
   "description": "permissions test",
   "version": "1.4",
-
-  "applications": { "gecko": { "id": "permissions@test.mozilla.org" } },
-
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "permissions@test.mozilla.org"
+    }
+  },
   "icons": {
     "64": "icon.png"
   },
-
-  "permissions": ["tabs", "history", "nativeMessaging",
-                  "http://singlehost.domain/*",
-                  "https://singlehost.domain/*",
-                  "http://*.wildcard.domain/*",
-                  "https://*.wildcard.domain/*"]
+  "permissions": [
+    "tabs",
+    "history",
+    "nativeMessaging",
+    "http://singlehost.domain/*",
+    "https://singlehost.domain/*",
+    "http://*.wildcard.domain/*",
+    "https://*.wildcard.domain/*"
+  ]
 }
