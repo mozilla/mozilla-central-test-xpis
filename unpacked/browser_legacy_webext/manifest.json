@@ -3,8 +3,14 @@
   "name": "Test Legacy Update",
   "description": "Test Legacy Update",
   "version": "2.0",
-
-  "applications": { "gecko": { "id": "legacy_update@tests.mozilla.org" } },
-
-  "permissions": ["tabs", "webNavigation", "<all_urls>"]
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "legacy_update@tests.mozilla.org"
+    }
+  },
+  "permissions": [
+    "tabs",
+    "webNavigation",
+    "<all_urls>"
+  ]
 }

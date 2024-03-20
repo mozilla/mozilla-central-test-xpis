@@ -3,12 +3,13 @@
   "name": "test",
   "description": "test",
   "version": "2.0",
-
-  "applications": {
+  "browser_specific_settings": {
     "gecko": {
       "id": "update_perms@tests.mozilla.org"
     }
   },
-
-  "permissions": ["alarms", "idle"]
+  "permissions": [
+    "alarms",
+    "idle"
+  ]
 }

@@ -3,16 +3,15 @@
   "name": "test",
   "description": "test",
   "version": "1.0",
-
-  "applications": {
+  "browser_specific_settings": {
     "gecko": {
       "id": "update_icon2@tests.mozilla.org"
     }
   },
-
   "icons": {
     "64": "icon.png"
   },
-
-  "permissions": ["history"]
+  "permissions": [
+    "history"
+  ]
 }
