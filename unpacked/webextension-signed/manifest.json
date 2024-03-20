@@ -1,0 +1,8 @@
+{
+  "manifest_version": 2,
+  "name": "install test",
+  "description": "install test",
+  "version": "1.0",
+  
+  "applications": { "gecko": { "id": "{d3e7c1f1-2e35-4a49-89fe-9f46eb8abf0a}" } }
+}
