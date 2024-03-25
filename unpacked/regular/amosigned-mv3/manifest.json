@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "amosigned-mv3-xpi@tests.mozilla.org"
+    }
+  },
+  "name": "XPI Test",
+  "version": "3.1"
+}
