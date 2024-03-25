@@ -3,8 +3,7 @@
   "name": "XPI Telemetry Signed Test",
   "description": "A signed webextension",
   "version": "1.0",
-
-  "applications": {
+  "browser_specific_settings": {
     "gecko": {
       "id": "tel-signed-webext@tests.mozilla.org"
     }
