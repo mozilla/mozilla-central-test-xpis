@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-SOURCE_DIR=unpacked
-
+# Old folders
 rm -rf "dist/privileged"
+rm -rf "dist/regular"
 
 for sub_folder in "regular" "signed_with_production_cert" "signed_with_staging_cert"; do
   dist_folder="dist/$sub_folder"
@@ -10,8 +10,8 @@ for sub_folder in "regular" "signed_with_production_cert" "signed_with_staging_c
   rm -rf "$dist_folder"
   mkdir -p "$dist_folder"
 
-  find "$SOURCE_DIR/$sub_folder" -type d -maxdepth 1 -print0 | while read -r -d $'\0' folder; do
-    if [[ "$folder" == "$SOURCE_DIR/$sub_folder" ]]; then
+  find "$sub_folder" -type d -maxdepth 1 -print0 | while read -r -d $'\0' folder; do
+    if [[ "$folder" == "$sub_folder" ]]; then
       continue
     fi
 
@@ -19,7 +19,7 @@ for sub_folder in "regular" "signed_with_production_cert" "signed_with_staging_c
 
     # Move to the directory of the add-on and zip its content.
     pushd "$folder" || exit 1
-    zip "../../../$dist_folder/$zip_file" ./*
+    zip "../../$dist_folder/$zip_file" ./*
     popd || exit 2
   done
 done
