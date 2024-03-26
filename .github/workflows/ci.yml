@@ -19,5 +19,5 @@ jobs:
       - name: Make ZIP files
         run: ./make_zip_files.sh
 
-      - name: Run addons-linter on regular extensions
-        run: find dist/regular -type f -name '*.zip' -print0 | xargs -0 -n1 sh -c 'echo "$0" ; npx addons-linter --self-hosted "$0"'
+      - name: Run addons-linter
+        run: find dist -type f -name '*.zip' -print0 | xargs -0 -n1 sh -c 'echo "$0" ; npx addons-linter --self-hosted "$0"'
