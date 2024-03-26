@@ -4,7 +4,7 @@ SOURCE_DIR=unpacked
 
 rm -rf "dist/privileged"
 
-for sub_folder in "regular"; do
+for sub_folder in "regular" "signed_with_production_cert"; do
   dist_folder="dist/$sub_folder"
 
   rm -rf "$dist_folder"
