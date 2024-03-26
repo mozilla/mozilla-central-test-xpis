@@ -2,7 +2,9 @@
 
 SOURCE_DIR=unpacked
 
-for sub_folder in "regular" "privileged"; do
+rm -rf "dist/privileged"
+
+for sub_folder in "regular"; do
   dist_folder="dist/$sub_folder"
 
   rm -rf "$dist_folder"

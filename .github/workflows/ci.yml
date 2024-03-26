@@ -21,6 +21,3 @@ jobs:
 
       - name: Run addons-linter on regular extensions
         run: find dist/regular -type f -name '*.zip' -print0 | xargs -0 -n1 sh -c 'echo "$0" ; npx addons-linter --self-hosted "$0"'
-
-      - name: Run addons-linter on privileged extensions
-        run: find dist/privileged -type f -name '*.zip' -print0 | xargs -0 -n1 sh -c 'echo "$0" ; npx addons-linter --privileged "$0"'
