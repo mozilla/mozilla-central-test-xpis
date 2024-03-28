@@ -1,10 +1,6 @@
 #!/usr/bin/env bash
 
-# Old folders
-rm -rf "dist/privileged"
-rm -rf "dist/regular"
-
-for sub_folder in "regular" "signed_with_production_cert" "signed_with_staging_cert" "unsigned"; do
+for sub_folder in "unknown" "signed_with_production_cert" "signed_with_staging_cert" "unsigned"; do
   dist_folder="dist/$sub_folder"
 
   rm -rf "$dist_folder"
