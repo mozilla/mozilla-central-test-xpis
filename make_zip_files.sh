@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-for sub_folder in "unknown" "signed_with_production_cert" "signed_with_staging_cert" "unsigned"; do
+for sub_folder in "signed_with_production_cert" "signed_with_staging_cert" "unsigned"; do
   dist_folder="dist/$sub_folder"
 
   rm -rf "$dist_folder"
