@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "version": "3.0",
+  "description": "A test extension.",
+  "name": "Test Line Extension",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "recommended-line@test.mozilla.org"
+    }
+  }
+}
